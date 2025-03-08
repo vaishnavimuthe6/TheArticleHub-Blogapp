@@ -1,0 +1,39 @@
+
+.styles{
+  border:2px solid gray;
+  border-radius:20px;
+  padding:10px;
+  background-color:aliceblue;
+  
+}
+.brod{
+  border:1px solid lightgray;
+  border-radius:5px;
+}
+.read{
+  border-radius:10px;
+  padding:5px;
+  background-color:rgb(241, 222, 173);
+}
+.author-block{
+  border:2px solid black;
+ 
+}
+.heading{
+  background-color:rgba(238, 152, 77, 0.323);
+  
+}
+.bgc{
+  background-color: rgb(244, 234, 234);
+}
+.title{
+  color:rgb(177, 64, 96);
+ 
+
+}
+.head{
+  background-color: beige;
+}
+.ch{
+  height:300px;
+}
