@@ -2,8 +2,7 @@ const UserAuthor=require("../Models/userAuthorModel")
 const ADMIN_USER_ID=process.env.ADMIN_USER_ID;
 require('dotenv').config();
 async function createUserOrAuthor(req,res){
-    //bussiness logic to create or user or Author
-      //get user or author object from req
+  
       const newUserAuthor=req.body;
       //find user by email id
       const userInDb=await UserAuthor.findOne({email:newUserAuthor.email})
@@ -17,7 +16,7 @@ async function createUserOrAuthor(req,res){
         }
 
       }else{
-        // if(newUserAuthor.role==="admin" && newUserAuthor.clerkId!=)
+        
         let newUser=new UserAuthor(newUserAuthor);
         let newUserOrAuthorDoc=await newUser.save();
         res.status(201).send({message:newUserOrAuthorDoc.role,payload:newUserOrAuthorDoc})
